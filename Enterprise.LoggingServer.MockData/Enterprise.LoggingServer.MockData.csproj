@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Abstract.NetStandard\Enterprise.Abstract.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Models.NetStandard\Enterprise.Models.NetStandard.csproj" />
+  </ItemGroup>
+
+</Project>

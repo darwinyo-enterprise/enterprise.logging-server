@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Middlewares.NetStandard\Enterprise.Middlewares.NetStandard.csproj" />
+    <ProjectReference Include="..\Enterprise.LoggingServer.DataLayers\Enterprise.LoggingServer.DataLayers.csproj" />
+    <ProjectReference Include="..\Enterprise.LoggingServer.Repository\Enterprise.LoggingServer.Repository.csproj" />
+    <ProjectReference Include="..\Enterprise.LoggingServer.UnitOfWork\Enterprise.LoggingServer.UnitOfWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.http.abstractions\2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

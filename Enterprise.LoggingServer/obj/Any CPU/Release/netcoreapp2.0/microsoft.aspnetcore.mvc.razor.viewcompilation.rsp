@@ -1,0 +1,5 @@
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=Enterprise.LoggingServer
+--content-root=C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer
+--file=

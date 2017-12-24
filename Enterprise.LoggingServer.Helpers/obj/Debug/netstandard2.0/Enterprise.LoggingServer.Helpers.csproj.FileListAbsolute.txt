@@ -1,0 +1,17 @@
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.deps.json
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Comparer.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Interfaces.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Models.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Models.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Interfaces.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Comparer.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.csproj.CoreCompileInputs.cache
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.AssemblyInfoInputs.cache
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.AssemblyInfo.cs
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Enums.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\bin\Debug\netstandard2.0\Enterprise.Enums.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer.Helpers\obj\Debug\netstandard2.0\Enterprise.LoggingServer.Helpers.csprojResolveAssemblyReference.cache

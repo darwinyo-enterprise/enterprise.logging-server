@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.LoggingServer.DataLayers\Enterprise.LoggingServer.DataLayers.csproj" />
+    <ProjectReference Include="..\Enterprise.LoggingServer.Interfaces\Enterprise.LoggingServer.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
