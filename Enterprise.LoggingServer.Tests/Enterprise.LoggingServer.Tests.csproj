@@ -14,8 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Services\Enterprise.Services.Interfaces\Enterprise.Services.Interfaces.csproj" />
     <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Abstract.NetStandard\Enterprise.Abstract.NetStandard.csproj" />
-    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Helpers.NetStandard\Enterprise.Helpers.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Comparer.NetStandard\Enterprise.Comparer.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Constants.NetStandard\Enterprise.Constants.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Fixtures.NetStandard\Enterprise.Fixtures.NetStandard.csproj" />
+    <ProjectReference Include="..\..\Shared Libraries\Net Standard\Enterprise.Models.NetStandard\Enterprise.Models.NetStandard.csproj" />
     <ProjectReference Include="..\Enterprise.LoggingServer.DataLayers\Enterprise.LoggingServer.DataLayers.csproj" />
     <ProjectReference Include="..\Enterprise.LoggingServer.MockData\Enterprise.LoggingServer.MockData.csproj" />
   </ItemGroup>

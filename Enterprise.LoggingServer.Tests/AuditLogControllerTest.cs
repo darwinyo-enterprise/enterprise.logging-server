@@ -1,44 +1,66 @@
 ﻿using Enterprise.Abstract.NetStandard;
 using Enterprise.Comparer.NetStandard;
-using Enterprise.Constants.NetStandard.LoggingServer;
-using Enterprise.Extension.NetStandard;
-using Enterprise.Helpers.NetStandard;
+using Enterprise.Constants.NetStandard;
+using Enterprise.Fixtures.NetStandard;
 using Enterprise.LoggingServer.DataLayers.Mongo;
 using Enterprise.LoggingServer.MockData;
-using Enterprise.Models.NetStandard;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Enterprise.LoggingServer.Tests
 {
+    [Collection("Logging Test Collection")]
     public class AuditLogControllerTest : BaseTest
     {
-        public AuditLogControllerTest()
+        public AuditLogControllerTest(AuthorizationServiceFixture authorizationServiceFixture, LoggingServiceFixture loggingServiceFixture)
         {
+            _authorizationServiceFixture = authorizationServiceFixture;
+            _loggingServiceFixture = loggingServiceFixture;
             StartUp();
         }
         #region Fields
-        private LogModelMockData logModelMockData;
+        private AuthorizationServiceFixture _authorizationServiceFixture;
+        private LoggingServiceFixture _loggingServiceFixture;
+        private LogModelMockData _logModelMockData;
+
+        private const string clientID = ClientIDs.loggingserver_testclient;
+        private const string secret = ClientSecrets.loggingserver_testclient;
+        private const string scope = LoggingServerScopes.full_access;
+        private string accessToken;
+
         #endregion
 
         #region Overrides
+        public override void StartUp()
+        {
+            base.StartUp();
+            CleanUpLogs();
+        }
+        public override void InitVariables()
+        {
+            accessToken = _authorizationServiceFixture.AuthorizationService.CreateAccessTokenAsync(clientID, secret, scope).Result;
+        }
         public override void InitMockData()
         {
-            logModelMockData = new LogModelMockData();
+            _logModelMockData = new LogModelMockData();
         }
         public override void CleanUpLogs()
         {
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.DeleteLoggingAllAsync(ControllerUrls.AuditLog_URL).Wait();
+            var datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
+            if (datas.Count > 0)
+            {
+                _loggingServiceFixture.LoggingServices.DeleteAllAuditLogAsync(accessToken).Wait();
+            }
         }
         public override void CleanUpMockData()
         {
-            logModelMockData = null;
+            _logModelMockData = null;
         }
         #endregion
 
@@ -46,61 +68,48 @@ namespace Enterprise.LoggingServer.Tests
         public void Post_WhenPassRightModel_LogToMongoDB()
         {
             // Pre Test
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            var datas = _loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.Empty(datas);
 
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
             // Assert
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = _loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.NotEmpty(datas);
         }
         [Fact]
         public void Get_WhenIDPass_ReturnSingleLog()
         {
             // Pre Test
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            List<AuditLog> datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.Empty(datas);
 
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
             // Assert Item Exists
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert
-            httpClient = HttpClientHelper.CreateHttpClient();
-            var x = httpClient.GetLoggingByIdAsync(datas[0].LogID.ToString(), ControllerUrls.AuditLog_URL).Result;
-            var response = JsonConvert.DeserializeObject<AuditLog>(x.Content.ReadAsStringAsync().Result);
+            var response = _loggingServiceFixture.LoggingServices.GetAuditLogByIDAsync(datas[0].LogID.ToString(), accessToken).Result;
             Assert.True(LogComparer<AuditLog>.Compare(datas[0], response));
         }
         [Fact]
         public void Get_WhenDatePass_ReturnEnumerablesOfLogs()
         {
             // Pre Test
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            List<AuditLog> datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.Empty(datas);
 
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
             // Assert Item Exists
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetListLoggingByDateAsync(DateTime.Today, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert Data Count
@@ -110,21 +119,16 @@ namespace Enterprise.LoggingServer.Tests
         public void Get_WhenNoParamaterPass_ReturnAllOfLogs()
         {
             // Pre Test
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            List<AuditLog> datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.Empty(datas);
 
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
             // Assert Item Exists
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogByDateAsync(DateTime.Today, accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert Data Count
@@ -134,36 +138,30 @@ namespace Enterprise.LoggingServer.Tests
         public void Delete_WhenIDParamaterPass_DeleteSingleLogs()
         {
             // Pre Test Init Data
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
-            httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            List<AuditLog> datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert Data Count
             Assert.Equal(3, datas.Count);
 
             var searchedID = datas[0].LogID;
+
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.DeleteLoggingByIDAsync(searchedID, ControllerUrls.AuditLog_URL).Wait();
+            _loggingServiceFixture.LoggingServices.DeleteAuditLogByIDAsync(searchedID, accessToken).Wait();
 
             // Assert Item Exists
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert Data Count
             Assert.Equal(2, datas.Count);
 
             // Assert Data Deleted
-            httpClient = HttpClientHelper.CreateHttpClient();
-            var data = JsonConvert.DeserializeObject<AuditLog>(httpClient.GetLoggingByIdAsync(searchedID, ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            var data = _loggingServiceFixture.LoggingServices.GetAuditLogByIDAsync(searchedID, accessToken).Result;
             Assert.Null(data);
         }
         [Fact]
@@ -171,45 +169,39 @@ namespace Enterprise.LoggingServer.Tests
         {
             // Pre Test
             // Verify Data Not Exists
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            var datas = _loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.Empty(datas);
 
             var searchedID = Guid.NewGuid().ToString();
+
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
+
             string expectedMessage = JsonConvert.SerializeObject(new { error = Constants.NetStandard.ExceptionMessage.ITEM_NOT_FOUND });
-            var code = HttpStatusCode.NotFound;
-            var response = httpClient.DeleteLoggingByIDAsync(searchedID, ControllerUrls.AuditLog_URL).Result;
+
+            var response = _loggingServiceFixture.LoggingServices.DeleteAuditLogByIDAsync(searchedID, accessToken).Result;
 
             Assert.Equal(expectedMessage, response.Content.ReadAsStringAsync().Result);
-            Assert.Equal(code, response.StatusCode);
+
         }
         [Fact]
         public void Delete_WhenNoParamaterPass_DeleteAllOfLogs()
         {
             // Pre Test Init Data
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.PostLoggingAsync(logModelMockData.GetAuditLogMockData(), false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
+            _loggingServiceFixture.LoggingServices.LogAsync(_logModelMockData.GetAuditLogMockData(), IsDevMode: false).Wait();
 
-            httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            List<AuditLog> datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.NotEmpty(datas);
 
             // Assert Data Count
             Assert.Equal(3, datas.Count);
 
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
-            httpClient.DeleteLoggingAllAsync(ControllerUrls.AuditLog_URL).Wait();
+            _loggingServiceFixture.LoggingServices.DeleteAllAuditLogAsync(accessToken).Wait();
 
             // Assert Item Exists
-            httpClient = HttpClientHelper.CreateHttpClient();
-            datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            datas = (List<AuditLog>)_loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.Empty(datas);
         }
         [Fact]
@@ -217,19 +209,17 @@ namespace Enterprise.LoggingServer.Tests
         {
             // Pre Test
             // Verify Data Not Exists
-            var httpClient = HttpClientHelper.CreateHttpClient();
-            var datas = JsonConvert.DeserializeObject<List<AuditLog>>(httpClient.GetAllLoggingAsync(ControllerUrls.AuditLog_URL).Result.Content.ReadAsStringAsync().Result);
+            var datas = _loggingServiceFixture.LoggingServices.GetAllAuditLogAsync(accessToken).Result;
             Assert.Empty(datas);
 
             // Assert Action Throw Exception
             // Action
-            httpClient = HttpClientHelper.CreateHttpClient();
             string expectedMessage = JsonConvert.SerializeObject(new { error = Constants.NetStandard.ExceptionMessage.ITEM_NOT_FOUND });
-            var code = HttpStatusCode.NotFound;
-            var response = httpClient.DeleteLoggingAllAsync(ControllerUrls.AuditLog_URL).Result;
+
+            var response = _loggingServiceFixture.LoggingServices.DeleteAllAuditLogAsync(accessToken).Result;
 
             Assert.Equal(expectedMessage, response.Content.ReadAsStringAsync().Result);
-            Assert.Equal(code, response.StatusCode);
+
         }
     }
 }

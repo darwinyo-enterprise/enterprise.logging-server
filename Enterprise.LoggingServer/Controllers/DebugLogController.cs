@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Enterprise.ActionResults.NetStandard;
 using Enterprise.Enums.NetStandard;
 using Enterprise.Exceptions.NetStandard;
-using Enterprise.LoggingServer.DataLayers.Mongo;
 using Enterprise.LoggingServer.Helpers;
+using Enterprise.LoggingServer.DataLayers.Mongo;
 using Enterprise.LoggingServer.Interfaces.Mongo;
 using Enterprise.Models.NetStandard;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using NLog;
@@ -19,14 +21,18 @@ namespace Enterprise.LoggingServer.Controllers
     [Route("api/[controller]")]
     public class DebugLogController : Controller
     {
-        private Logger _logger;
+        private ILogger _logger;
         private readonly ILogMongoUnitOfWork _logMongoUnitOfWork;
         public DebugLogController(ILogMongoUnitOfWork logMongoUnitOfWork)
         {
             _logMongoUnitOfWork = logMongoUnitOfWork;
+
+            // If Error Occured Within Logging Service this will be used, Otherwise This will replaced by logmodel
+            _logger = LogManager.GetLogger(nameof(DebugLogController));
         }
         // GET: api/<controller>
         [HttpGet]
+        [Authorize(Policy = "read_only_access_policy")]
         public async Task<IActionResult> Get()
         {
             IEnumerable<DebugLog> debugLog = null;
@@ -34,15 +40,16 @@ namespace Enterprise.LoggingServer.Controllers
             {
                 debugLog = await _logMongoUnitOfWork.DebugLogRepository.GetAllAsync(_logMongoUnitOfWork.LogMongoContext.DebugLogCollection);
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok(debugLog);
         }
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
+        [Authorize(Policy = "read_only_access_policy")]
         public async Task<IActionResult> Get(string id)
         {
             DebugLog debugLog = null;
@@ -50,15 +57,16 @@ namespace Enterprise.LoggingServer.Controllers
             {
                 debugLog = await _logMongoUnitOfWork.DebugLogRepository.GetSingleAsync(_logMongoUnitOfWork.LogMongoContext.DebugLogCollection, x => x.LogID == id);
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok(debugLog);
         }
 
         // GET api/<controller>/5-2-2017
         [HttpGet("search/{id}")]
+        [Authorize(Policy = "read_only_access_policy")]
         public async Task<IActionResult> GetByDate(string id)
         {
             IEnumerable<DebugLog> debugLog = null;
@@ -66,9 +74,9 @@ namespace Enterprise.LoggingServer.Controllers
             {
                 debugLog = await _logMongoUnitOfWork.DebugLogRepository.FindByAsync(_logMongoUnitOfWork.LogMongoContext.DebugLogCollection, x => x.Date == id);
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok(debugLog);
         }
@@ -94,18 +102,20 @@ namespace Enterprise.LoggingServer.Controllers
                     _logger.Info(logModel.LogException, logModel.LogMessage);
                 else if (logModel.LogType == LogTypeEnum.Warn)
                     _logger.Warn(logModel.LogException, logModel.LogMessage);
+
                 else
                     throw new InvalidLogTypeException();
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok();
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
+        [Authorize(Policy = "delete_access_policy")]
         public async Task<IActionResult> Delete(string id)
         {
             DeleteResult deleteResult;
@@ -117,13 +127,14 @@ namespace Enterprise.LoggingServer.Controllers
                     throw new ItemNotFoundException();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok();
         }
         [HttpDelete]
+        [Authorize(Policy = "delete_access_policy")]
         public async Task<IActionResult> Delete()
         {
             DeleteResult deleteResult;
@@ -135,9 +146,9 @@ namespace Enterprise.LoggingServer.Controllers
                     throw new ItemNotFoundException();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                return new LogServiceExceptionResult(ex, _logger);
             }
             return Ok();
         }

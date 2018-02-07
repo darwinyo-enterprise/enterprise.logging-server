@@ -1,11 +1,7 @@
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.dll
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.dll
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.dll
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.dll
@@ -22,24 +18,260 @@ C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingS
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.pdb
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
 C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
-C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.dll
+C:\Projects\BackendApps\Enterprise\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.dll
+C:\Users\Darwin Yo\Downloads\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Interfaces.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Repository.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.UnitOfWork.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.ConfigurationServer.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Interfaces.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.ConfigurationServer.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Repository.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.UnitOfWork.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.dll
+C:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Interfaces.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Repository.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.UnitOfWork.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.E-Commerce.NetStandard.DataLayers.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.ConfigurationServer.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.dll
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.LoggingServer.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Interfaces.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Terminals.ConfigurationServer.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.E-Commerce.NetStandard.DataLayers.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.Repository.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.UnitOfWork.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.pdb
+E:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\nlog.config
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.deps.json
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.json
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.runtimeconfig.dev.json
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DTO.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.E-Commerce.NetStandard.DataLayers.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Services.Interfaces.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ActionResults.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Exceptions.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Extension.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.DataLayers.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Extension.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Helpers.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Interfaces.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Targets.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Interfaces.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Enums.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Models.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Services.Interfaces.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DataLayers.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Constants.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.E-Commerce.NetStandard.DataLayers.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Helpers.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Abstract.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.Repository.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.LoggingServer.UnitOfWork.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Middlewares.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.Comparer.NetStandard.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\bin\Debug\netcoreapp2.0\Enterprise.ConfigurationServer.DTO.pdb
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csprojResolveAssemblyReference.cache
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.csproj.CoreCompileInputs.cache
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfoInputs.cache
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.AssemblyInfo.cs
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.dll
+H:\Projects\Enterprise\Logging Server\Enterprise.LoggingServer\obj\Debug\netcoreapp2.0\Enterprise.LoggingServer.pdb

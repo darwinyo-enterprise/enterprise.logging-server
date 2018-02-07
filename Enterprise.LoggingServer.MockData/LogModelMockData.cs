@@ -1,4 +1,5 @@
 ﻿using Enterprise.Abstract.NetStandard;
+using Enterprise.Constants.NetStandard;
 using Enterprise.Enums.NetStandard;
 using Enterprise.Models.NetStandard;
 using System;
@@ -17,7 +18,7 @@ namespace Enterprise.LoggingServer.MockData
             return new LogModel
             {
                 LogType = LogTypeEnum.Info,
-                CurrentApplication = ApplicationEnum.Testing,
+                CurrentApplication = ApplicationNames.Testing,
                 LoggerName = "Enterprise.LoggingServer.MockData",
                 LogMessage = "Additional Message...",
                 UserID = Guid.NewGuid().ToString(),
@@ -29,7 +30,7 @@ namespace Enterprise.LoggingServer.MockData
             return new LogModel
             {
                 LogType = LogTypeEnum.Debug,
-                CurrentApplication = ApplicationEnum.Testing,
+                CurrentApplication = ApplicationNames.Testing,
                 LoggerName = "Enterprise.LoggingServer.MockData",
                 LogMessage = "Additional Message...",
                 UserID = Guid.NewGuid().ToString(),
@@ -41,7 +42,7 @@ namespace Enterprise.LoggingServer.MockData
             return new LogModel
             {
                 LogType = LogTypeEnum.Error,
-                CurrentApplication = ApplicationEnum.Testing,
+                CurrentApplication = ApplicationNames.Testing,
                 LoggerName = "Enterprise.LoggingServer.MockData",
                 LogMessage = "Additional Message...",
                 UserID = Guid.NewGuid().ToString(),
